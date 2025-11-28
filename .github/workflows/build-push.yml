@@ -1,4 +1,4 @@
-name: Build and Push to ACR
+name: Image Build and Push to ACR
 
 on:
   workflow_dispatch:  # Isse tum manually GitHub se trigger kar sakte ho
@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: todo-delete-tasks-api
-      IMAGE_TAG: v1
+      IMAGE_NAME: todo-delete-tasks
+      IMAGE_TAG: v2
       ACR_NAME: acrprateek9143
       ACR_LOGIN_SERVER: acrprateek9143.azurecr.io
 
